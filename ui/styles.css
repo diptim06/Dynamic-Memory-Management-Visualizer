@@ -1,0 +1,179 @@
+/* Custom styles for Memory Management Visualizer */
+
+.main-header {
+    background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+    padding: 1.5rem;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+    color: white;
+    text-align: center;
+}
+
+.main-header h1 {
+    color: white;
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+.main-header p {
+    color: rgba(255, 255, 255, 0.9);
+    margin: 0.5rem 0 0 0;
+}
+
+.memory-frame {
+    border: 2px solid #667eea;
+    border-radius: 5px;
+    padding: 0.5rem;
+    margin: 0.25rem;
+    background-color: #f8f9fa;
+    text-align: center;
+    min-height: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.memory-frame.allocated {
+    background-color: #4facfe;
+    color: white;
+    border-color: #3d8bfd;
+}
+
+.memory-frame.free {
+    background-color: #e9ecef;
+    color: #6c757d;
+    border-color: #dee2e6;
+}
+
+.memory-frame.page-fault {
+    background-color: #ff6b6b;
+    color: white;
+    border-color: #ff5252;
+    animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.7;
+    }
+}
+
+.stats-box {
+    background-color: #f8f9fa;
+    border-left: 4px solid #667eea;
+    padding: 1rem;
+    border-radius: 5px;
+    margin: 1rem 0;
+}
+
+.stats-box h4 {
+    color: #667eea;
+    margin-top: 0;
+}
+
+.info-box {
+    background-color: #e7f3ff;
+    border: 1px solid #b3d9ff;
+    border-radius: 5px;
+    padding: 1rem;
+    margin: 1rem 0;
+}
+
+.warning-box {
+    background-color: #fff3cd;
+    border: 1px solid #ffc107;
+    border-radius: 5px;
+    padding: 1rem;
+    margin: 1rem 0;
+}
+
+.error-box {
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+    border-radius: 5px;
+    padding: 1rem;
+    margin: 1rem 0;
+}
+
+.sidebar-section {
+    margin: 1.5rem 0;
+}
+
+.section-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #667eea;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #667eea;
+}
+
+.button-primary {
+    background-color: #667eea;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+.button-primary:hover {
+    background-color: #5568d3;
+}
+
+.button-secondary {
+    background-color: #6c757d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+.button-secondary:hover {
+    background-color: #5a6268;
+}
+
+.page-table-entry {
+    padding: 0.5rem;
+    border: 1px solid #dee2e6;
+    border-radius: 3px;
+    margin: 0.25rem 0;
+    background-color: white;
+}
+
+.page-table-entry.present {
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+}
+
+.page-table-entry.not-present {
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+}
+
+.segment-box {
+    border: 2px solid #667eea;
+    border-radius: 5px;
+    padding: 1rem;
+    margin: 0.5rem 0;
+    background-color: #f8f9fa;
+}
+
+.segment-box.header {
+    background-color: #667eea;
+    color: white;
+    font-weight: bold;
+}
+
+.visualization-container {
+    background-color: white;
+    border: 1px solid #dee2e6;
+    border-radius: 10px;
+    padding: 1.5rem;
+    margin: 1rem 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
