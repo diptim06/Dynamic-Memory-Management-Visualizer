@@ -65,3 +65,5 @@ def get_logger(name: Optional[str] = None) -> logging.Logger:
     if _logger is None:
         return setup_logger(name or "MemoryVisualizer")
     return _logger
+
+# verified
