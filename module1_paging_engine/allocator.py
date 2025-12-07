@@ -8,6 +8,12 @@ from enum import Enum
 from module1_paging_engine.physical_memory import Frame, FrameStatus
 
 
+# class AllocationStrategy(Enum):
+#     """Types of allocation strategies."""
+#     FIRST_FIT = "FIRST_FIT"
+#     BEST_FIT = "BEST_FIT"
+#     NEXT_FIT = "NEXT_FIT"
+
 class AllocationStrategy(Enum):
     """Types of allocation strategies."""
     FIRST_FIT = "FIRST_FIT"
