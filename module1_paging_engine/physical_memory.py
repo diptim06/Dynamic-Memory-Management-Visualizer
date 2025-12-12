@@ -7,7 +7,7 @@ from typing import Dict, List, Optional, Tuple
 from enum import Enum
 
 
-class FrameStatus(Enum):
+class FrameStatus(Enum): #Added FrameStatus enum for tracking FREE and ALLOCATED memory frames.
     """Status of a physical memory frame."""
     FREE = "FREE"
     ALLOCATED = "ALLOCATED"
