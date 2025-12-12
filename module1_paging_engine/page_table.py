@@ -7,7 +7,7 @@ from typing import Dict, List, Optional
 from enum import Enum
 
 
-class PageStatus(Enum):
+class PageStatus(Enum): #Added PageStatus enum with NOT_PRESENT, PRESENT, MODIFIED, and REFERENCED states.
     """Status of a page in the page table."""
     NOT_PRESENT = "NOT_PRESENT"
     PRESENT = "PRESENT"
