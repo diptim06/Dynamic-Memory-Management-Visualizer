@@ -20,7 +20,7 @@ class PagingSimulator:
         physical_addr = simulator.translate_address(process_id=1, logical_address=0x1000)
     """
     
-    def __init__(
+    def __init__( #Uploaded Module 1 files for the Dynamic Memory Management Visualizer project."If you only added the __init__ part
         self,
         num_frames: int = 16,
         frame_size: int = 4096,
