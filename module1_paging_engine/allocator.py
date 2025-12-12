@@ -14,7 +14,7 @@ from module1_paging_engine.physical_memory import Frame, FrameStatus
 #     BEST_FIT = "BEST_FIT"
 #     NEXT_FIT = "NEXT_FIT"
 
-class AllocationStrategy(Enum):
+class AllocationStrategy(Enum): #Added AllocationStrategy enum with FIRST_FIT, BEST_FIT, and NEXT_FIT options.
     """Types of allocation strategies."""
     FIRST_FIT = "FIRST_FIT"
     BEST_FIT = "BEST_FIT"
